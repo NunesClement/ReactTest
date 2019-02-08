@@ -6,7 +6,11 @@ function Header() {
       <div class="row">
         <div class="col-sm">Mailing list</div>
         <div class="col-sm">Landing page</div>
-        <div class="col-sm">Mon compte</div>
+        <div class="col-sm">
+          <button type="button" class="btn btn-primary">
+            Mon compte
+          </button>
+        </div>
       </div>
     </div>
   );
