@@ -1,11 +1,10 @@
 import React from "react";
-import Footer from "/src/Footer";
 
-function App() {
+function Footer() {
   return (
-    <div>
-      <Footer />
+    <div class="fixed-bottom">
+      <p>Version 0.1</p>
     </div>
   );
 }
-export default App;
+export default Footer;
