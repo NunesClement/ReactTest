@@ -1,11 +1,8 @@
 import React from "react";
+import { Incrementeur } from "/src/Increment";
 
 function Content() {
-  return (
-    <div class="text-center">
-      <h1>0</h1>
-    </div>
-  );
+  return <Incrementeur />;
 }
 
 export default Content;

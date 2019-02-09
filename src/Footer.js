@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div class="fixed-bottom">
+    <div className="fixed-bottom">
       <p>Version 0.1</p>
     </div>
   );
