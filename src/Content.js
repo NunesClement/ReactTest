@@ -1,8 +1,8 @@
 import React from "react";
-import { Incrementeur } from "/src/Increment";
+import Increment from "/src/Increment";
 
 function Content() {
-  return <Incrementeur />;
+  return <Increment />;
 }
 
 export default Content;
