@@ -2,11 +2,17 @@ import React, { useState, useEffect } from "react";
 
 function Increment() {
   const [count, setCount] = useState(0);
-  const [mail, setMail] = useState("test@test.fr");
-
+  var mailSyst = "test@test.fr";
+  const [mail, setMail] = useState(mailSyst);
   useEffect(() => {
     document.title = `You clicked ${count} times`;
   });
+  function handleMailChange(e) {
+    mailSyst += e.target.value;
+  }
+  function validChange() {
+    setMail(mailSyst);
+  }
   return (
     <div className="col-md-12 text-center">
       <p>Vous avez cliqué {count} fois</p>
@@ -18,7 +24,10 @@ function Increment() {
       </button>
       <br />
       <br />
-      <input className="form-control" onClick={() => setMail(mail + "\n")} />
+      <input onChange={handleMailChange} className="form-control" />
+      <button onClick={validChange} className="text-center btn btn-primary">
+        ENVOYER
+      </button>
       <p>{mail}</p>
     </div>
   );
